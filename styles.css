@@ -20,11 +20,12 @@
     grid-template-rows: repeat(15, 1fr);
     gap: 25px;
     background-color: hsl(206, 78%, 51%);
+    max-width: 250px;
   }
 
   .first-sect-grid, .second-sect-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     padding: 25px;
@@ -34,10 +35,34 @@
   .header {
     grid-column: 2/5;
     display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: auto;
+    gap: 10px;
   }
 
   .header-btn {
     display: block;
+  }
+
+  .search-bar {
+    grid-column: 1/4;
+    padding: 10px;
+  }
+
+  .search-bar input {
+    min-width: 60%;
+  }
+
+  .btn-cont {
+    grid-column: 4/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .btn-cont button {
+    grid-row: 3/4;
   }
 
  
