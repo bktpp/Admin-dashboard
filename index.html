@@ -1,78 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="main-cont">
-        <nav class="sidebar">
-            <h1>Dashboard</h1>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Admin Dashboard</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <div class="main-cont">
+         <header class="header">
+            <div class="header__user-nav">
+               <div class="header-icon">
+                  <div class="icon">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <label>
+                     <input class="header__searchbar" type="text" />
+                  </label>
+               </div>
+               <div class="user__icon">
+                  <div class="icon bell">
+                     <i class="fa-regular fa-bell"></i>
+                  </div>
+                  <img class="user-pic" src="man-8106958_640.png" alt="user icon" />
+                  <h2>BKTP</h2>
+               </div>
+            </div>
+            <div class="header__btn-actions">
+               <div class="header__btn-actions-left">
+                  <img class="user-pic" src="man-8106958_640.png" alt="user icon" />
+                  <h2><span class="header-sm">Hi there,</span>BKTP (@bktp)</h2>
+               </div>
+               <div class="btn__container">
+                  <button class="btn">New</button>
+                  <button class="btn">Upload</button>
+                  <button class="btn">Share</button>
+               </div>
+            </div>
+         </header>
+
+         <nav class="sidebar">
+            <div class="sb-title">
+               <svg class="dash-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+               </svg>
+               <h1>Dashboard</h1>
+            </div>
             <ul class="first-sect-grid">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-home"></use>
+                  </svg>
+                  Home
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-profile"></use>
+                  </svg>
+                  Profile
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-message"></use>
+                  </svg>
+                  Messages
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-access_time"></use>
+                  </svg>
+                  History
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-add_task"></use>
+                  </svg>
+                  Tasks
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-groups"></use>
+                  </svg>
+                  Communities
+               </li>
             </ul>
             <ul class="second-sect-grid">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-settings"></use></svg
+                  >Settings
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-live_help"></use>
+                  </svg>
+                  Support
+               </li>
+               <li>
+                  <svg>
+                     <use href="sprite.svg#icon-privacy_tip"></use>
+                  </svg>
+                  Privacy
+               </li>
             </ul>
-        </nav>
-        <header class="header">
-            
-            <label class="search-bar">
-                <input type="text">
-            </label>
-            <h2>Name here</h2>
-            <h2>name here again</h2>
-            <div class="btn-cont">
-                <button class="header-btn">New</button>
-                <button class="header-btn">Upload</button>
-                <button class="header-btn">Share</button>
+         </nav>
+
+         <div class="content">
+            <div class="content__headers">
+               <h2>Your Projects</h2>
+               <h2>Announcements</h2>
             </div>
-        </header>
-            <div class="card1">
-                <h2>Super Cool Project</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
+            <div class="projects">
+               <div class="card">
+                  <div>
+                     <h2>Super Cool Project</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius
+                        possimus voluptatum eaque accusantium quaerat, quis reprehenderit.
+                     </p>
+                  </div>
+                  <div class="icon-container">
+                     <svg>
+                        <use href="sprite.svg#icon-star-plus"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-eye-plus-outline"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-share-variant"></use>
+                     </svg>
+                  </div>
+               </div>
+               <div class="card">
+                  <div>
+                     <h2>Less Cool Project</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius
+                        possimus voluptatum eaque accusantium quaerat, quis reprehenderit.
+                     </p>
+                  </div>
+                  <div class="icon-container">
+                     <svg>
+                        <use href="sprite.svg#icon-star-plus"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-eye-plus-outline"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-share-variant"></use>
+                     </svg>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div>
+                     <h2>Impossible App</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius
+                        possimus voluptatum eaque accusantium quaerat, quis reprehenderit.
+                     </p>
+                  </div>
+                  <div class="icon-container">
+                     <svg>
+                        <use href="sprite.svg#icon-star-plus"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-eye-plus-outline"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-share-variant"></use>
+                     </svg>
+                  </div>
+               </div>
+               <div class="card">
+                  <div>
+                     <h2>Easy Peasy App</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius
+                        possimus voluptatum eaque accusantium quaerat, quis reprehenderit.
+                     </p>
+                  </div>
+                  <div class="icon-container">
+                     <svg>
+                        <use href="sprite.svg#icon-star-plus"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-eye-plus-outline"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-share-variant"></use>
+                     </svg>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div>
+                     <h2>Money Maker</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius
+                        possimus voluptatum eaque accusantium quaerat, quis reprehenderit.
+                     </p>
+                  </div>
+                  <div class="icon-container">
+                     <svg>
+                        <use href="sprite.svg#icon-star-plus"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-eye-plus-outline"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-share-variant"></use>
+                     </svg>
+                  </div>
+               </div>
+
+               <div class="card">
+                  <div>
+                     <h2>Ad Blocker</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius
+                        possimus voluptatum eaque accusantium quaerat, quis reprehenderit.
+                     </p>
+                  </div>
+                  <div class="icon-container">
+                     <svg>
+                        <use href="sprite.svg#icon-star-plus"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-eye-plus-outline"></use>
+                     </svg>
+                     <svg>
+                        <use href="sprite.svg#icon-share-variant"></use>
+                     </svg>
+                  </div>
+               </div>
             </div>
-            <div class="card2">
-                <h2>Less Cool Project</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
+            <div class="up-to-date">
+               <div class="announcements">
+                  <ul>
+                     <li>
+                        <h2 class="announcements-title">Site Maintenance</h2>
+                        <p class="announcements-content">
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
+                           repellat amet consectetur adipisicing...
+                        </p>
+                     </li>
+                     <li>
+                        <h2 class="announcements-title">Community Share Day</h2>
+                        <p class="announcements-content">
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
+                           repellat amet consectetur adipisicing...
+                        </p>
+                     </li>
+                     <li>
+                        <h2 class="announcements-title">Updated Privacy Policy</h2>
+                        <p class="announcements-content">
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
+                           repellat amet consectetur adipisicing...
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <h2>Trending</h2>
+               <div class="trending">
+                  <div class="trending__users">
+                     <img src="bear-8157555_640.jpg" alt="bear" />
+                     <p><span>@tegan</span><br />World Peace Builder</p>
+                  </div>
+                  <div class="trending__users">
+                     <img src="man-8106958_640.png" alt="man" />
+                     <p><span>@tegan</span><br />World Peace Builder</p>
+                  </div>
+                  <div class="trending__users">
+                     <img src="pie-8116621_640.png" alt="pie" />
+                     <p><span>@tegan</span><br />World Peace Builder</p>
+                  </div>
+                  <div class="trending__users">
+                     <img src="squirrel-8219439_640.jpg" alt="squirrel" />
+                     <p><span>@tegan</span><br />World Peace Builder</p>
+                  </div>
+               </div>
             </div>
-            <div class="card3">
-                <h2>Announcements</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
-            </div>
-            <div class="card4">
-                <h2>Impossible App</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
-            </div>
-            <div class="card5">
-                <h2>Easy Peasy App</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
-            </div>
-            <div class="card6">
-                <h2>Trending</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
-            </div>
-        
-            <div class="card7">
-                <h2>Money Maker</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
-            </div>
-       
-            <div class="card8">
-                <h2>Ad Blocker</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti eius possimus voluptatum eaque accusantium quaerat, quis reprehenderit.</p>
-            </div>
-        
-    </div>
-</body>
+         </div>
+         <footer class="footer">&copy; Copyright by Bktp via The Odin Project</footer>
+      </div>
+   </body>
 </html>
